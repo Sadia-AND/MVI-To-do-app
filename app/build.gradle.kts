@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.breens.todochamp"
+    namespace = "com.example.todochamp"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.breens.todochamp"
+        applicationId = "com.example.todochamp"
         minSdk = 21
         targetSdk = 33
         versionCode = 1
@@ -72,10 +72,10 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1")
 
     // Firebase BOM version
-    implementation(platform("com.google.firebase:firebase-bom:32.1.1"))
+    implementation(platform("com.google.firebase:firebase-bom:32.7.2"))
 
     // Google Analytics
-    implementation("com.google.firebase:firebase-analytics-ktx")
+    implementation("com.google.firebase:firebase-analytics")
 
     // Firebase Cloud Firestore
     implementation("com.google.firebase:firebase-firestore-ktx")
